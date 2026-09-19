@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.UUID;
 
 public class MilitaryRobot extends BaseRobot implements UpdateState {
+
     protected Integer attack;
 
     public MilitaryRobot(Integer xStart, Integer yStart, Integer serialNumber, Integer attack) {

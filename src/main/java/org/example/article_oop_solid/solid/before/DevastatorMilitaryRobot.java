@@ -4,6 +4,7 @@ import org.example.article_oop_solid.solid.after.BaseBuilding;
 import org.example.article_oop_solid.solid.after.MilitaryRobot;
 
 public class DevastatorMilitaryRobot extends MilitaryRobot implements OperationBuilding {
+
     public DevastatorMilitaryRobot(Integer xStart, Integer yStart, Integer serialNumber, Integer attack) {
         super(xStart, yStart, serialNumber, attack);
     }

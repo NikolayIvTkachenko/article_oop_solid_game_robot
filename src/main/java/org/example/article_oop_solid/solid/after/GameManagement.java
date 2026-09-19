@@ -15,6 +15,8 @@ public class GameManagement {
 
 }
 
+// =========================================================================================================
+// =========================================================================================================
 //--------------------------------------------------------------------------------//
 //        LogNotificationManager logNotificationManager = new LogNotificationManager();
 //        DatabaseNotificationManager databaseNotificationManager = new DatabaseNotificationManager();
@@ -33,6 +35,47 @@ public class GameManagement {
 //
 //        dashboardNotificationManager.prepareAndSendMessage(m1);
 //        dashboardNotificationManager.prepareAndSendMessage(m2);
+
+
+//public class GameManagement {
+//
+//    public static void main(String[] args) {
+//        LogNotificationManager logNotificationManager = new LogNotificationManager();
+//        DatabaseNotificationManager databaseNotificationManager = new DatabaseNotificationManager();
+//        DashboardNotificationManager dashboardNotificationManager = new DashboardNotificationManager();
+//
+//        MilitaryRobot m1 = new MilitaryRobot( 5, 5, 1,
+//                ConstantApp.getInstance().ROBOT_MILITARY_ATTACK_POINTS*2);
+//        MilitaryRobot m2 = new MilitaryRobot( 5, 5, 1,
+//                ConstantApp.getInstance().ROBOT_MILITARY_ATTACK_POINTS);
+//
+//        logNotificationManager.prepareAndSendMessage(m1);
+//        logNotificationManager.prepareAndSendMessage(m2);
+//
+//        databaseNotificationManager.prepareAndSendMessage(m1);
+//        databaseNotificationManager.prepareAndSendMessage(m2);
+//
+//        dashboardNotificationManager.prepareAndSendMessage(m1);
+//        dashboardNotificationManager.prepareAndSendMessage(m2);
+//    }
+//}
+
+
+// =========================================================================================================
+// =========================================================================================================
+//public class GameManagement {
+//
+//    public static void main(String[] args) {
+//        NotificationManager notificationManager = new NotificationManager();
+//        MilitaryRobot m1 = new MilitaryRobot( 5, 5, 1,
+//                ConstantApp.getInstance().ROBOT_MILITARY_ATTACK_POINTS*2);
+//        MilitaryRobot m2 = new MilitaryRobot( 5, 5, 1,
+//                ConstantApp.getInstance().ROBOT_MILITARY_ATTACK_POINTS);
+//
+//        notificationManager.prepareAndSendMessage(m1);
+//        notificationManager.prepareAndSendMessage(m2);
+//    }
+//}
 
 //--------------------------------------------------------------------------------//
 //        NotificationManager notificationManager = new NotificationManager();

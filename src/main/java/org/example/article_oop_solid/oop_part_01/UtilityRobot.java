@@ -1,35 +1,22 @@
-package org.example.article_oop_solid.solid.before;
+package org.example.article_oop_solid.oop_part_01;
+
+import org.example.article_oop_solid.ConstantApp;
 
 import java.util.Date;
 import java.util.UUID;
 
-public class UtilityRobot extends BaseRobot implements UpdateState {
+public class UtilityRobot extends BaseRobot {
 
-    protected Integer repairPointShield;
+    Integer repairPointShield;
 
     public UtilityRobot(Integer xStart, Integer yStart, Integer serialNumber, Integer repairPointShield) {
         this.uuid = UUID.randomUUID();
         this.dataIssue = new Date();
+        this.serialNumber = serialNumber;
         this.power = ConstantApp.getInstance().ROBOT_POWER_UTILITY;
         this.shield = ConstantApp.getInstance().ROBOT_SHIELD_UTILITY;
         this.xPosition = xStart;
         this.yPosition = yStart;
-        this.repairPointShield = repairPointShield;
-    }
-
-    public void sendMessage() {
-        String messagePosition = "X: " +xPosition + " , Y: " + yPosition;
-        String messageData = "UUID: " + uuid + " , repair point: " + repairPointShield
-                + " , power: " + power + " , shield: " + shield;
-        System.out.println(messagePosition);
-        System.out.println(messageData);
-    }
-
-    public Integer getRepairPointShield() {
-        return repairPointShield;
-    }
-
-    public void setRepairPointShield(Integer repairPointShield) {
         this.repairPointShield = repairPointShield;
     }
 
@@ -59,11 +46,4 @@ public class UtilityRobot extends BaseRobot implements UpdateState {
                 item.shield = ConstantApp.getInstance().ROBOT_SHIELD_TRANSPORT;
         }
     }
-
-    @Override
-    public void updateItem() {
-
-        this.power = ConstantApp.getInstance().ROBOT_POWER_UTILITY;
-    }
-
 }

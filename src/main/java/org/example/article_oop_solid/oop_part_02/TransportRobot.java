@@ -1,11 +1,12 @@
-package org.example.article_oop_solid.oop;
+package org.example.article_oop_solid.oop_part_02;
+
 
 import org.example.article_oop_solid.ConstantApp;
 
 import java.util.Date;
 import java.util.UUID;
 
-public class TransportRobot extends BaseRobot implements UpdateState {
+public class TransportRobot extends BaseRobot {
 
     protected Integer cargoWeight;
 
@@ -58,13 +59,5 @@ public class TransportRobot extends BaseRobot implements UpdateState {
         }
         return false;
     }
-
-    @Override
-    public void updateItem() {
-        if (shield > 1) {
-            this.power = ConstantApp.getInstance().ROBOT_POWER_TRANSPORT;
-        } else {
-            this.power = 0;
-        }
-    }
 }
+

@@ -1,11 +1,11 @@
-package org.example.article_oop_solid.oop;
+package org.example.article_oop_solid.oop_part_02;
 
 import org.example.article_oop_solid.ConstantApp;
 
 import java.util.Date;
 import java.util.UUID;
 
-public class MilitaryRobot extends BaseRobot implements UpdateState {
+public class MilitaryRobot extends BaseRobot {
 
     protected Integer attack;
 
@@ -44,14 +44,5 @@ public class MilitaryRobot extends BaseRobot implements UpdateState {
     public boolean attack(BaseRobot item) {
         item.shield = item.shield - attack;
         return item.shield < 0;
-    }
-
-    @Override
-    public void updateItem() {
-        if (shield > 5) {
-            this.power = ConstantApp.getInstance().ROBOT_POWER_MILITARY;
-        } else {
-            this.power = 0;
-        }
     }
 }

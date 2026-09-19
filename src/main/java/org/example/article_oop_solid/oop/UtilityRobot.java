@@ -1,9 +1,12 @@
 package org.example.article_oop_solid.oop;
 
+import org.example.article_oop_solid.ConstantApp;
+
 import java.util.Date;
 import java.util.UUID;
 
 public class UtilityRobot extends BaseRobot implements UpdateState {
+
     protected Integer repairPointShield;
 
     public UtilityRobot(Integer xStart, Integer yStart, Integer serialNumber, Integer repairPointShield) {
@@ -53,6 +56,7 @@ public class UtilityRobot extends BaseRobot implements UpdateState {
 
     @Override
     public void updateItem() {
+
         this.power = ConstantApp.getInstance().ROBOT_POWER_UTILITY;
     }
 }

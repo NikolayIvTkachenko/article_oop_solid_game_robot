@@ -1,30 +1,23 @@
-package org.example.article_oop_solid.oop;
+package org.example.article_oop_solid.oop_part_01;
 
 import org.example.article_oop_solid.ConstantApp;
 
 import java.util.Date;
 import java.util.UUID;
 
-public class TransportRobot extends BaseRobot implements UpdateState {
+public class TransportRobot extends BaseRobot  {
 
-    protected Integer cargoWeight;
+    Integer cargoWeight;
 
     public TransportRobot(Integer xStart, Integer yStart, Integer serialNumber) {
         this.uuid = UUID.randomUUID();
         this.dataIssue = new Date();
+        this.serialNumber = serialNumber;
         this.power = ConstantApp.getInstance().ROBOT_POWER_TRANSPORT;
         this.shield = ConstantApp.getInstance().ROBOT_SHIELD_TRANSPORT;
         this.xPosition = xStart;
         this.yPosition = yStart;
         this.cargoWeight = 0;
-    }
-
-    public Integer getCargoWeight() {
-        return cargoWeight;
-    }
-
-    public void setCargoWeight(Integer cargoWeight) {
-        this.cargoWeight = cargoWeight;
     }
 
     @Override
@@ -57,14 +50,5 @@ public class TransportRobot extends BaseRobot implements UpdateState {
             return true;
         }
         return false;
-    }
-
-    @Override
-    public void updateItem() {
-        if (shield > 1) {
-            this.power = ConstantApp.getInstance().ROBOT_POWER_TRANSPORT;
-        } else {
-            this.power = 0;
-        }
     }
 }

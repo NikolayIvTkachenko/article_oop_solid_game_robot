@@ -1,4 +1,4 @@
-package org.example.article_oop_solid.oop;
+package org.example.article_oop_solid.oop_part_02;
 
 import java.util.Date;
 import java.util.UUID;
@@ -51,5 +51,3 @@ public abstract class BaseRobot {
         return shield;
     }
 }
-
-

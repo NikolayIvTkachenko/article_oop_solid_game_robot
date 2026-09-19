@@ -1,4 +1,4 @@
-package org.example.article_oop_solid.oop;
+package org.example.article_oop_solid;
 
 /**
  * Данный класс создан для примера и домонстрации создания потокобезопасного синглетона на Java

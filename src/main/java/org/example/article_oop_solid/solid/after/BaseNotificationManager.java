@@ -1,9 +1,10 @@
 package org.example.article_oop_solid.solid.after;
 
-import org.example.article_oop_solid.solid.before.BaseRobot;
-import org.example.article_oop_solid.solid.before.MilitaryRobot;
-import org.example.article_oop_solid.solid.before.TransportRobot;
-import org.example.article_oop_solid.solid.before.UtilityRobot;
+//import org.example.article_oop_solid.solid.before.BaseRobot;
+//import org.example.article_oop_solid.solid.before.MilitaryRobot;
+//import org.example.article_oop_solid.solid.before.TransportRobot;
+//import org.example.article_oop_solid.solid.before.UtilityRobot;
+
 
 public abstract class BaseNotificationManager {
 
